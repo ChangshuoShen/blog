@@ -1,0 +1,197 @@
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+        color: black;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+    img {
+        max-width: 60%;
+        height: auto;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>ASR</th>
+      <th>SAE Activations Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dev_mode_with_rant</td>
+      <td>3.846154</td>
+      <td><img src="./llama31-8b/dev_mode_with_rant.png" alt="dev_mode_with_rant"></td>
+    </tr>
+    <tr>
+      <td>evil_confidant</td>
+      <td>24.278846</td>
+      <td><img src="./llama31-8b/evil_confidant.png" alt="evil_confidant"></td>
+    </tr>
+    <tr>
+      <td>auto_obfuscation</td>
+      <td>29.326923</td>
+      <td><img src="./llama31-8b/auto_obfuscation.png" alt="auto_obfuscation"></td>
+    </tr>
+    <tr>
+      <td>pap_logical_appeal</td>
+      <td>71.875000</td>
+      <td><img src="./llama31-8b/pap_logical_appeal.png" alt="pap_logical_appeal"></td>
+    </tr>
+    <tr>
+      <td>poems</td>
+      <td>8.173077</td>
+      <td><img src="./llama31-8b/poems.png" alt="poems"></td>
+    </tr>
+    <tr>
+      <td>combination_2</td>
+      <td>31.971154</td>
+      <td><img src="./llama31-8b/combination_2.png" alt="combination_2"></td>
+    </tr>
+    <tr>
+      <td>rot_13</td>
+      <td>37.259615</td>
+      <td><img src="./llama31-8b/rot_13.png" alt="rot_13"></td>
+    </tr>
+    <tr>
+      <td>prefix_injection</td>
+      <td>3.846154</td>
+      <td><img src="./llama31-8b/prefix_injection.png" alt="prefix_injection"></td>
+    </tr>
+    <tr>
+      <td>disemvowel</td>
+      <td>44.230769</td>
+      <td><img src="./llama31-8b/disemvowel.png" alt="disemvowel"></td>
+    </tr>
+    <tr>
+      <td>base64_input_only</td>
+      <td>43.750000</td>
+      <td><img src="./llama31-8b/base64_input_only.png" alt="base64_input_only"></td>
+    </tr>
+    <tr>
+      <td>distractors</td>
+      <td>21.394231</td>
+      <td><img src="./llama31-8b/distractors.png" alt="distractors"></td>
+    </tr>
+    <tr>
+      <td>wikipedia</td>
+      <td>2.403846</td>
+      <td><img src="./llama31-8b/wikipedia.png" alt="wikipedia"></td>
+    </tr>
+    <tr>
+      <td>combination_3</td>
+      <td>20.192308</td>
+      <td><img src="./llama31-8b/combination_3.png" alt="combination_3"></td>
+    </tr>
+    <tr>
+      <td>gcg_transfer_harmbench</td>
+      <td>18.509615</td>
+      <td><img src="./llama31-8b/gcg_transfer_harmbench.png" alt="gcg_transfer_harmbench"></td>
+    </tr>
+    <tr>
+      <td>base64_output_only</td>
+      <td>0.480769</td>
+      <td><img src="./llama31-8b/base64_output_only.png" alt="base64_output_only"></td>
+    </tr>
+    <tr>
+      <td>distractors_negated</td>
+      <td>9.134615</td>
+      <td><img src="./llama31-8b/distractors_negated.png" alt="distractors_negated"></td>
+    </tr>
+    <tr>
+      <td>wikipedia_with_title</td>
+      <td>1.923077</td>
+      <td><img src="./llama31-8b/wikipedia_with_title.png" alt="wikipedia_with_title"></td>
+    </tr>
+    <tr>
+      <td>style_injection_json</td>
+      <td>5.769231</td>
+      <td><img src="./llama31-8b/style_injection_json.png" alt="style_injection_json"></td>
+    </tr>
+    <tr>
+      <td>pair</td>
+      <td>90.865385</td>
+      <td><img src="./llama31-8b/pair.png" alt="pair"></td>
+    </tr>
+    <tr>
+      <td>few_shot_json</td>
+      <td>20.913462</td>
+      <td><img src="./llama31-8b/few_shot_json.png" alt="few_shot_json"></td>
+    </tr>
+    <tr>
+      <td>pap_authority_endorsement</td>
+      <td>72.355769</td>
+      <td><img src="./llama31-8b/pap_authority_endorsement.png" alt="pap_authority_endorsement"></td>
+    </tr>
+    <tr>
+      <td>auto_payload_splitting</td>
+      <td>22.115385</td>
+      <td><img src="./llama31-8b/auto_payload_splitting.png" alt="auto_payload_splitting"></td>
+    </tr>
+    <tr>
+      <td>base64_raw</td>
+      <td>16.346154</td>
+      <td><img src="./llama31-8b/base64_raw.png" alt="base64_raw"></td>
+    </tr>
+    <tr>
+      <td>pap_evidence_based_persuasion</td>
+      <td>85.096154</td>
+      <td><img src="./llama31-8b/pap_evidence_based_persuasion.png" alt="pap_evidence_based_persuasion"></td>
+    </tr>
+    <tr>
+      <td>pap_expert_endorsement</td>
+      <td>56.009615</td>
+      <td><img src="./llama31-8b/pap_expert_endorsement.png" alt="pap_expert_endorsement"></td>
+    </tr>
+    <tr>
+      <td>dev_mode_v2</td>
+      <td>2.644231</td>
+      <td><img src="./llama31-8b/dev_mode_v2.png" alt="dev_mode_v2"></td>
+    </tr>
+    <tr>
+      <td>gcg_transfer_universal_attacks</td>
+      <td>10.576923</td>
+      <td><img src="./llama31-8b/gcg_transfer_universal_attacks.png" alt="gcg_transfer_universal_attacks"></td>
+    </tr>
+    <tr>
+      <td>refusal_suppression</td>
+      <td>21.394231</td>
+      <td><img src="./llama31-8b/refusal_suppression.png" alt="refusal_suppression"></td>
+    </tr>
+    <tr>
+      <td>style_injection_short</td>
+      <td>10.336538</td>
+      <td><img src="./llama31-8b/style_injection_short.png" alt="style_injection_short"></td>
+    </tr>
+    <tr>
+      <td>base64</td>
+      <td>19.471154</td>
+      <td><img src="./llama31-8b/base64.png" alt="base64"></td>
+    </tr>
+    <tr>
+      <td>pap_misrepresentation</td>
+      <td>66.826923</td>
+      <td><img src="./llama31-8b/pap_misrepresentation.png" alt="pap_misrepresentation"></td>
+    </tr>
+    <tr>
+      <td>aim</td>
+      <td>12.019231</td>
+      <td><img src="./llama31-8b/aim.png" alt="aim"></td>
+    </tr>
+  </tbody>
+</table>
